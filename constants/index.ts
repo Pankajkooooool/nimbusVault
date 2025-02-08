@@ -20,8 +20,13 @@ export const navItems = [
     url: "/media",
   },
   {
-    name: "Others",
+    name: "My Vault",
     icon: "/assets/icons/others.svg",
+    url: "/vault",
+  },
+  {
+    name: "Others",
+    icon: "/assets/icons/file-docx.svg",
     url: "/others",
   },
 ];

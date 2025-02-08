@@ -210,6 +210,13 @@ export const getUsageSummary = (totalSpace: any) => {
       url: "/media",
     },
     {
+      title: "Vault",
+      size: totalSpace.vault.size,
+      latestDate: totalSpace.vault.latestDate,
+      icon: "/assets/icons/file-other-light.svg",
+      url: "/vault",
+    },
+    {
       title: "Others",
       size: totalSpace.other.size,
       latestDate: totalSpace.other.latestDate,
@@ -229,6 +236,8 @@ export const getFileTypesParams = (type: string) => {
       return ["video", "audio"];
     case "others":
       return ["other"];
+    case "vault":
+      return ["vault"];
     default:
       return ["document"];
   }
